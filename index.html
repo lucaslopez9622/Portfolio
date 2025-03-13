@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+<body>
+    
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Lucas Lopez</a>
+            </div>
+        
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="ocultarMenu()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="ocultarMenu()">Acerca de mí</a></li>
+                    <li><a href="#portfolio" onclick="ocultarMenu()">Portfolio</a></li>
+                    <li><a href="#certificados" onclick="ocultarMenu()">Certificados</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.png" alt="">
+            </div>
+            <h1>LUCAS LOPEZ</h1>
+            <h2>Desarrolador Full stack junior <br> Diseño UI/UX junior</h2>
+            <div class="redes">
+                <a href="https://github.com/lucaslopez9622"><i class="fa-brands fa-github"></i> <p class="p-redes">Github</p> </a>
+                <a href="https://www.linkedin.com/in/lucaslopezemanuel96"><i class="fa-brands fa-linkedin-in"></i><p class="p-redes">Linkedin</p></a>
+                <a href="https://www.linkedin.com/in/lucaslopezemanuel96"><i class="fa-solid fa-file-pdf"></i><p class="p-redes">Curriculum</p></a>
+             
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Acerca de mí</h2>
+           <p> Soy un programador junior con una gran pasión por el desarrollo web y el aprendizaje continuo,
+                He desarrollado habilidades en front-end utilizando HTML, CSS y JavaScript, he comenzado a explorar el backend con herramientas como Node.js, bases de datos SQL, MySQL, 
+                tengo conocimientos en C#, Java, Python, git y diseño UI/UX utilizando Figma.<br>
+                Actualmente estoy estudiando en la universidad y mejorando mis habilidades en desarrollo Angular en udemy.<br> 
+                Trabajo con Visual Studio code como mi entorno de desarrollo principal y me enfoco en crear proyectos personales y asi fortalecer mis conocimientos.           
+            </p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <img width="20" height="20" src="https://img.icons8.com/fluency/48/mail--v1.png" alt="mail--v1"/>
+                            lopezlucasemanuel@outlook.com
+                        </li>
+                        <li>
+                            <img width="20" height="20" src="https://img.icons8.com/fluency/48/calendar--v1.png" alt="calendar--v1"/>
+                            22/09/1996
+                        </li>
+                        <li>
+                            <img width="20" height="20" src="https://img.icons8.com/fluency/48/maps.png" alt="maps"/>
+                            Buenos aires, Argentina
+                        </li>
+                    </ul>
+                    <button>
+                        <a href="ruta/a/tu/cv.pdf" download></a>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <h3>Lenguajes y Tecnologías</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                            <span>Java</span>
+                        </div>
+                        <div class="interes">
+                            <img width="64" height="64" src="https://img.icons8.com/nolan/64/c-sharp-logo.png" alt="c-sharp-logo"/>
+                            <span>C#</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/python--v1.png" alt="python--v1"/>
+                            <span>Python</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/javascript.png" alt="javascript"/>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/nodejs.png" alt="nodejs"/>
+                            <span class="node">NodeJS</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/mysql-logo.png" alt="mysql-logo"/>
+                            <span>Mysql</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/html-5--v1.png" alt="html-5--v1"/>
+                            <span>Html/Css</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/underline.png" alt="underline"/>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/git.png" alt="git"/>
+                            <span>Git</span>
+                        </div>
+                        <div class="interes">
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+                            <span>Vs</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color-glass/48/bootstrap.png" alt="bootstrap"/>
+                            <span>Booststrap</span>
+                        </div>
+                        <div class="interes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/50/figma--v1.png" alt="figma--v1"/>
+                            <span>Figma</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="img-container">
+                        <img src="img/gym.jpg" alt="Gimnasio Nitro" class="portfolio-img">
+                        <div class="overlay">
+                            <h3>Gimnasio Nitro </h3>
+                            <p>Sitio web para gimnasios.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="tech-container">
+                            <div class="btn-tech html">
+                                <img src="https://img.icons8.com/color/50/html-5--v1.png" alt="html"> 
+                                <span>HTML</span>
+                            </div>
+                            <div class="btn-tech js">
+                                <img src="https://img.icons8.com/color/50/javascript.png" alt="javascript"> 
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="btn-tech css">
+                                <img src="https://img.icons8.com/color/50/css3.png" alt="css3"/>
+                                <span>Css</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-buttons">
+                        <a href="https://lucaslopez9622.github.io/GymNitro/" class="btn">
+                            <i class="fa-solid fa-link"></i> Proyecto
+                        </a>
+                        <a href="https://github.com/LucasLopez9622/GymNitro" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                
+                </div>
+                <div class="portfolio-item">
+                    <div class="img-container">
+                        <img src="img/codoshop1.jpg" alt="CodoShop" class="portfolio-img">
+                        <div class="overlay">
+                            <h3>CodoShop </h3>
+                            <p>Sitio web de ventas deportivas Desarrollado en el programa Codo a Codo.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="tech-container">
+                            <div class="btn-tech html">
+                                <img src="https://img.icons8.com/color/50/html-5--v1.png" alt="html"> 
+                                <span>HTML</span>
+                            </div>
+                            <div class="btn-tech js">
+                                <img src="https://img.icons8.com/color/50/javascript.png" alt="javascript"> 
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="btn-tech css">
+                                <img src="https://img.icons8.com/color/50/css3.png" alt="css3"/>
+                                <span>Css</span>
+                            </div>
+                            <div class="btn-tech bs">
+                                <img src="https://img.icons8.com/color-glass/48/bootstrap.png" alt="bootstrap"/>
+                                <span>Booststrap</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="portfolio-buttons">
+                        <a href="https://lucaslopez9622.github.io/Codo.Shop/" class="btn">
+                            <i class="fa-solid fa-link"></i> Proyecto
+                        </a>
+                        <a href="https://github.com/lucaslopez9622/Codo.Shop.git" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="img-container">
+                        <img src="img/fenix.jpg" alt="Fenix" class="portfolio-img">
+                        <div class="overlay">
+                            <h3>Fenix Proyecto UX-UI</h3>
+                            <p>Aplicación que permite a los usuarios acceder de forma rápida y actualizada a las Tasas Nominales Anuales (TNA) de las billeteras virtuales.<br> Desarrollado en el programa Codo a Codo  <br> diseño ux/ui.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="tech-container">
+                            <div class="btn-tech fg">
+                                <img src="https://img.icons8.com/color/50/figma--v1.png" alt="figma--v1"/>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-buttons">
+                        <a href="descarga/fenix.pdf" download="fenix_diseño_ux-ui.pdf" class="btn">
+                            <i class="fa-solid fa-link"></i> Proyecto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificados" class="certificados">
+        <div class="contenido-seccion">
+            <h2>Certificados</h2>
+            <div class="certificados-container">
+                <div class="certificado">
+                    <img src="img/pythonfullstack.jpg" alt="Certificado Python full stack">
+                    <div class="overlay-cer">
+                        <a href="https://link-a-certificado.com" target="_blank">Ver Certificado</a>
+                    </div>
+                </div>
+                <div class="certificado">
+                    <img src="img/diseño-ux-ui.jpg" alt="Diploma en Diseño UI/UX">
+                    <div class="overlay-cer">
+                        <a href="https://link-a-certificado.com" target="_blank">Ver Certificado</a>
+                    </div>
+                </div>
+                <div class="certificado">
+                    <img src="img/nodejs.jfif" alt="Certificado en JavaScript">
+                    <div class="overlay-cer">
+                        <a href="https://link-a-certificado.com" target="_blank">Ver Certificado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lucas Lopez </p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/lucaslopezemanuel96" target="_blank">
+                    <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"/>
+                </a>
+                <a href="https://github.com/lucaslopez96" target="_blank">
+                    <img src="https://img.icons8.com/fluency/48/github.png" alt="GitHub"/>
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
