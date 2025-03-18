@@ -255,7 +255,10 @@ body {
     color: #1CB698;
 }
 
+
 .sobremi button {
+    
+    display: inline-block;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #1CB698;
@@ -268,8 +271,12 @@ body {
     overflow: hidden;
     border-radius: 8px;
 }
-
+.sobremi button a {
+    text-decoration: none; 
+    color: inherit; 
+}
 .sobremi button .overlay {
+    
     position: absolute;
     top: 0;
     left: 0;
