@@ -81,7 +81,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .inicio .contenido-banner:hover {
-    box-shadow: 0px 5px 10px rgba(4, 176, 136, 0.7);
+    box-shadow: 0px 2px 5px rgba(4, 176, 136, 0.7);
 }
 .inicio .contenido-banner img{
     background-color: #212121;
@@ -149,7 +149,7 @@ body {
     visibility: visible;
 }
 
-
+/*ACERCA DE MI*/
 .sobremi {
     background-color: #1e2326;
     color: #ffffff;
@@ -177,10 +177,12 @@ body {
 .sobremi .contenido-seccion p {
     font-size: 16px; 
     line-height: 28px; 
+    max-width: 80ch;
     margin-bottom: 43px; 
     color: #e0e0e0; 
     text-align: justify; 
     letter-spacing: 0.3px;
+    margin-left: 19%;
 }
 
 .sobremi .fila {
@@ -190,7 +192,7 @@ body {
 }
 
 .sobremi .fila .col {
-    width: 48%;
+    width: 50%;
 }
 
 .sobremi .fila .col h3 {
@@ -232,8 +234,8 @@ body {
 }
 
 .sobremi .fila .col .contenedor-intereses .interes {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     background-color: #252A2E;
     border-radius: 12px;
     display: flex;
@@ -246,7 +248,7 @@ body {
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(18, 193, 155, 0.8);
+    box-shadow: 0px 0px 4px rgba(18, 193, 155, 0.8);
 }
 
 .sobremi .fila .col .contenedor-intereses .interes i {
@@ -296,68 +298,67 @@ body {
     color: #fff;
 }
 
-.nav-responsive {
-    display: none;
-    background-color: #1CB698;
-    color: #fff;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
+
 
 /* PORTFOLIO */
-
 .portfolio {
     background: linear-gradient(to top, rgba(30, 35, 40, 0.9), rgb(20, 25, 30));
-    padding: 120px 40px;
+    padding: 30px 0;
     text-align: center;
 }
 
 .portfolio h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Righteous', sans-serif;
     color: #1CB698;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 20px 0;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    margin-top: -3.5%;
 }
-
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    margin-top: 30px;
+    grid-template-rows: auto;
+    justify-content: center;
 }
 
+.portfolio-grid > .portfolio-item:nth-child(3n) {
+    grid-column: span 1;
+    justify-self: center; 
+}
 .portfolio-item {
     background-color: #252A2E;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
-    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 480px; 
+    padding: 8px; 
+    margin: 0 auto 40px; 
+   
+   
 }
 
+
 .portfolio-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-img {
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .img-container {
@@ -372,27 +373,27 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(30, 40, 69, 0.85);
-    color: rgb(255, 255, 255);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .overlay h3 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
 .overlay p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 .img-container:hover .overlay {
@@ -405,10 +406,9 @@ body {
 }
 
 .portfolio-item h3 {
-    font-size: 30px;
+    font-size: 24px;
     color: #ffffff;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    margin-bottom: 8px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -416,24 +416,25 @@ body {
 .tech-container {
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 .btn-tech img {
-    width: 28px;
-    height: 28px;
-    margin-right: 4px;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
 }
 
 .btn-tech {
     display: flex;
     align-items: center;
     color: white;
-    padding: 7px 8px;
+    padding: 6px 10px;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     border: 1px solid transparent;
     background: rgba(255, 255, 255, 0.1);
     transition: background 0.3s ease-in-out, transform 0.2s;
@@ -446,24 +447,24 @@ body {
 
 .portfolio-buttons {
     display: flex;
-    top: 85%;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
 }
 
 .btn, .github-link {
     display: inline-block;
     background: #1CB698;
     color: white;
-    padding: 6px;
+    padding: 8px 12px;
     border-radius: 6px;
     text-decoration: none;
     transition: background 0.3s ease-in-out, transform 0.2s;
     font-weight: bold;
-    margin: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
 }
 
 .btn:hover, .github-link:hover {
@@ -471,6 +472,7 @@ body {
     transform: scale(1.1);
 }
 
+/*CERTIFICADO*/
 .certificados {
     background-color: #1e2326;
     padding: 210px;
@@ -561,6 +563,8 @@ body {
 .certificado {
     transition: transform 0.5s ease-in-out, box-shadow 0.1s ease-in-out;
 }
+
+/*FOOTER*/
 footer { 
     background-color: #000000ed;
     padding: 40px 20px;
@@ -589,4 +593,132 @@ footer {
     margin-top: 15px;
     font-size: 14px;
     opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+    .contenedor-header header {
+        padding: 10px 15px;
+    }
+
+    .inicio .contenido-banner {
+        max-width: 90%;
+    }
+
+    .sobremi .fila {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .sobremi .fila .col {
+        width: 100%;
+        text-align: center;
+       
+    }
+   
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-responsive {
+        display: block; }
+
+    header nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1e2326;
+        display: none; 
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav.show {
+        display: flex; 
+    }
+
+    .inicio {
+        height: auto;
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio .contenido-banner {
+        width: 100%;
+    }
+
+    .sobremi .contenido-seccion p{
+        margin-left: 1px;
+        max-width: 45ch;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .certificados{
+        padding: 150px;
+    }
+    .certificados h2{
+        margin-left: -50%;
+    }
+    .certificados-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .certificado img {
+        width: 100%;
+        height: auto; 
+        max-height: 400px;
+        object-fit: contain; 
+        border-bottom: 2px solid #1CB698;
+        display: block; 
+        
+    }
+    .certificado {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-header header .logo a {
+        font-size: 28px;
+    }
+
+    .inicio .contenido-banner h1 {
+        font-size: 28px;
+    }
+
+    .inicio .contenido-banner h2 {
+        font-size: 16px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+    }
 }
